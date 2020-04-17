@@ -101,4 +101,4 @@ var e=arguments[3],t=require("./lib/request"),r=require("./lib/response"),n=requ
 },{"./lib/request":"yL7F","./lib/response":"UxIR","xtend":"K5Tb","builtin-status-codes":"OpTI","url":"Mej7"}],"lY9v":[function(require,module,exports) {
 "use strict";require("./scss/app.scss");var e=t(require("./views/Header")),n=t(require("./views/User"));function t(e){return e&&e.__esModule?e:{default:e}}var r=require("http"),u=function(e){for(var t=0;t<e;t++)r.get("https://randomuser.me/api/",function(e){var t=[];e.on("data",function(e){t.push(e)}),e.on("end",function(){t=JSON.parse(t).results[0],document.getElementById("content").innerHTML+=(0,n.default)(t)})})},s=function(){document.getElementById("header").innerHTML=(0,e.default)(),u(25)};s();
 },{"./scss/app.scss":"qlE7","./views/Header":"ChPW","./views/User":"lpzE","http":"KKrj"}]},{},["lY9v"], null)
-//# sourceMappingURL=App.179b4bb6.js.map
+//# sourceMappingURL=App.fd817fa7.js.map
