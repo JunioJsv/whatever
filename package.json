@@ -1,0 +1,31 @@
+{
+  "name": "whatever",
+  "version": "1.0.0",
+  "description": "Not a big deal",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "rimraf build && parcel ./src/index.html -d build -p 3000",
+    "build": "rimraf dist && parcel build ./src/index.html --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "JunioJsv",
+  "license": "",
+  "browserslist": [
+    "last 3 Chrome versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "eslint": "^6.8.0",
+    "gh-pages": "^2.2.0",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "http": "0.0.1-security"
+  }
+}

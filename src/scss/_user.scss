@@ -1,0 +1,37 @@
+.user {
+    color: rgb(80, 80, 80);
+    background: white;
+    overflow: hidden;
+    border-radius: 2.5mm;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .2);
+    transition: all 400ms;
+    .phone {
+        .icon-margin {
+            margin: 0 .5rem 0 0;
+        }
+        display: flex;
+        position: absolute;
+        align-items: center;
+        color: gray;
+        font-weight: bold;
+        padding: 8px;
+        margin: 1rem 1rem;
+        background-color: rgba(255, 255, 255, .85);
+        border-radius: 2.5mm;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, .2);
+    }
+    img {
+        width: 100%;
+    }
+    .title {
+        font-weight: bold;
+    }
+    .subtitle {
+        word-wrap: break-word;
+        color: gray;
+    }
+    &:hover {
+        transform: translateY(1px) scale(1.05);
+        box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, .2);
+    }
+}
